@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends git curl wget ca-certificates &&\
+    apt-get install -y --no-install-recommends git curl wget ca-certificates ssh &&\
     apt-get clean &&\
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* &&\
     update-ca-certificates
